@@ -38,7 +38,6 @@ twobuttons {
     border-style: solid;
     border-color: black;
     padding: 10px;
-    border: 1px 0px solid white;
     background-color: #002b51;
     flex: 1;
     width: 100%;

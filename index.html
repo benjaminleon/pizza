@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="sv-se">
+    
+<head>
+  <script type="text/javascript">
+   if (screen.width > 50000000) {
+    //window.location = "http://www.68an.se";
+  }
+</script>
+
+<title>68:an</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+    background-color: black;
+}
+bottomcontainer {
+    text-align: center; 
+    position: fixed;
+    bottom: 20px;
+    width: 100%; 
+}
+openinghours {
+    margin: 50px;   
+}
+p {
+    color: wheat;
+    margin: 6px;
+    text-align: center;
+}
+address {
+    color: white;
+}
+a {
+    color: white;
+     text-decoration: none; /* Remove underscore of link */
+}
+
+twobuttons {
+    display: flex;
+    text-align: center;   
+    color: white;
+    width: 50%;
+    margin:0 auto;
+}
+#menu:hover {
+    background-color: #004887;
+} 
+#menu {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px; 
+    border: 1px 0px solid white;
+    background-color: #002b51;
+    flex: 1;
+    width: 100%; 
+} 
+#call {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 10px; 
+    background-color: #002b51;
+    flex: 1;
+}
+#call:hover {
+    background-color: #004887;
+}
+
+img {
+    max-width: 20px;
+    max-height: 20px; 
+    width: auto;
+    height: auto;
+}
+
+</style>
+</head>
+
+<body> 
+
+<twobuttons>
+    <div id="menu">Meny</div>
+    <div id="call">
+        <a href="tel:013 17 68 00"><img style="vertical-align: middle" src="call.png"> Ring</a></div>
+</twobuttons>
+
+<bottomcontainer>
+    <openinghours>
+        <p>Sommaröppettider gäller t.o.m. den 6e augusti</p>
+        <p>måndag - söndag</p>
+        <p>12:00  - 21:00</p>
+    </openinghours>
+
+    <div id="adress">
+        <!--http://maps.google.com/maps?q=68an Funkar bra och är kortare. 
+            Raden som används nedan ger däremot en bra skala,
+            med överblick över stan-->
+        <a href="https://www.google.se/maps/place/68:ans+Pizzarea+%26+Restaurang/@58.4072133,15.5708306,14z/data=!4m5!3m4!1s0x0:0xba7b9c1945b4963!8m2!3d58.407358!4d15.5724898">
+            <img src="location.jpg"> Rydsvägen 68D, 584 31 Linköping</a>
+    </div>
+</bottomcontainer>
+
+</body>
+</html>

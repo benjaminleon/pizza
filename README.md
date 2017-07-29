@@ -3,13 +3,13 @@
 Install virtualenv
 `pip install virtualenv`
 
-Find our where your python 3.5+ installation is located
+Find out where your python 3.5+ installation is located
 which python3 (or which python)
 
 `virtualenv -p /usr/local/bin/python3 pizza-venv`
 
 Now you can activate the virtual python environment by issuing the following command
-source pizza-venv/bin/activate
+`source pizza-venv/bin/activate`
 
 You should see parentheses at the beginning of your prompt. E.g:
 ```

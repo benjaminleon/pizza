@@ -1,10 +1,10 @@
 
-## To run the server it is highly recommended that you install virutalenv
+## To run the server it is highly recommended that you install virtualenv
 Install virtualenv
 `pip install virtualenv`
 
-Find our where your python 3.5+ installation is located
-which python3 (or which python)
+Find our where your python 3.5+ installation is located:
+`which python3` (or `which python`)
 
 `virtualenv -p /usr/local/bin/python3 pizza-venv`
 

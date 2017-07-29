@@ -2,6 +2,17 @@
 body {
     background-color: black;
 }
+bottomcontainer {
+    text-align: center;
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+}
+p {
+    color: wheat;
+    margin: 6px;
+    text-align: center;
+}
 a {
     color: white;
      text-decoration: none; /* Remove underscore of link */
@@ -19,11 +30,12 @@ threebuttons {
     padding: 15px;
 }
 #ordinary {
-    color: wheat;
+    color: wheat; /*Doesn't work so I style in html instead! :I*/
     text-align: center;
     width: 50%;
     margin: auto;
     font-weight: bold;
+    margin:0 auto;
 }
 .pizzas {
     display: flex;

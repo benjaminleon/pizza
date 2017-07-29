@@ -2,14 +2,23 @@
 body {
     background-color: black;
 }
-bottomcontainer {
-    text-align: center;
-    bottom: 10px;
-    position: fixed;
+#bottomcontainer {
     width: 100%;
+    margin: auto;
+    text-align: bottom;
+}
+#space {
+    height: 100px;
+}
+#openinghours {
+    text-align: center;
+}
+#address {
+    text-align: center;
+
 }
 p {
-    color: wheat;
+    color: white;
     margin: 6px;
     text-align: center;
 }
@@ -38,10 +47,11 @@ twobuttons {
     margin:0 auto;
 }
 .pizzas {
+    overflow-x: auto;
+    white-space: nowrap;
     display: flex;
     text-align: left;
     color: wheat;
-    width: 80%;
     margin:0 auto;
     padding: 30px;
 }

@@ -43,9 +43,12 @@ threebuttons {
     display: flex;
     text-align: left;
     color: wheat;
-    width: 30%;
+    width: 35%;
     margin:0 auto;
     padding: 30px;
+}
+.pizzanames {
+    flex: 1;
 }
 
 #home {

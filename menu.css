@@ -32,23 +32,32 @@ threebuttons {
     text-align: center;
     padding: 15px;
 }
-pizzamenus {
-    color: wheat;
-    padding: 10px;
+.pizzamenus {
+    color: wheat; /*Doesn't seem to be inherited by 'ordinary'*/
+    padding: 20px;
     text-align: center;
-    width: 25%;
+    width: 40%;
     margin:0 auto;
+    /* background-color: gray; */
+}
+#ordinary-container {
+    padding: 10px;
 }
 #ordinary {
+    color: wheat;
     text-align: center;
-    padding: 5px;
-    width: 50%;
+    padding: 0px;
+    width: 100%;
     margin: auto;
 }
 #ordinary:hover {
     font-weight: bold;
 }
+#special-container {
+    padding: 10px;
+}
 #special {
+    color: wheat;
     text-align: center;
     padding: 5px;
     width: 50%;
@@ -57,7 +66,11 @@ pizzamenus {
 #special:hover {
     font-weight: bold;
 }
+#luxury-container {
+    padding: 10px;
+}
 #luxury {
+    color: wheat;
     text-align: center;
     padding: 5px;
     width: 50%;

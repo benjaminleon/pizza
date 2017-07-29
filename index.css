@@ -21,7 +21,7 @@ address {
 }
 a {
     color: white;
-     text-decoration: none; /* Remove underscore of link */
+    text-decoration: none;
 }
 twobuttons {
     display: flex;

@@ -2,11 +2,12 @@
 body {
     background-color: black;
 }
-bottomcontainer {
+#bottomcontainer {
     text-align: center;
-    bottom: 10px;
-    position: fixed;
     width: 100%;
+}
+#space {
+    height: 100px;
 }
 p {
     color: wheat;

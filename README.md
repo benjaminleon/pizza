@@ -19,8 +19,8 @@ You should see parentheses at the beginning of your prompt. E.g:
 (pizza-venv) ~/Documents/code/private/pizza (master) $
 ```
 
-Install flask:
-`pip install Flask`
+Install dependencies:
+`pip install -r requirements.txt`
 
 The above install command will not mess with your existing python installation if you are running in venv.
 

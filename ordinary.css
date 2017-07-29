@@ -15,7 +15,7 @@ p {
 }
 a {
     color: white;
-     text-decoration: none; /* Remove underscore of link */
+    text-decoration: none; /* Remove underscore of link */
 }
 threebuttons {
     display: flex;

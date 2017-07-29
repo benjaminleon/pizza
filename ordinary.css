@@ -2,20 +2,6 @@
 body {
     background-color: black;
 }
-bottomcontainer {
-    text-align: center;
-    position: fixed;
-    bottom: 20px;
-    width: 100%;
-}
-p {
-    color: wheat;
-    margin: 6px;
-    text-align: center;
-}
-address {
-    color: white;
-}
 a {
     color: white;
      text-decoration: none; /* Remove underscore of link */
@@ -43,7 +29,7 @@ threebuttons {
     display: flex;
     text-align: left;
     color: wheat;
-    width: 35%;
+    width: 80%;
     margin:0 auto;
     padding: 30px;
 }

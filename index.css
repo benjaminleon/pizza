@@ -5,7 +5,7 @@ body {
 bottomcontainer {
     text-align: center;
     position: fixed;
-    bottom: 20px;
+    bottom: 80px;
     width: 100%;
 }
 openinghours {
@@ -23,7 +23,8 @@ a {
     color: white;
     text-decoration: none;
 }
-twobuttons {
+#twobuttons {
+    padding: 80px;
     display: flex;
     text-align: center;
     color: white;

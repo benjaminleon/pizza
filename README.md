@@ -9,7 +9,7 @@ Find our where your python 3.5+ installation is located:
 `virtualenv -p /usr/local/bin/python3 pizza-venv`
 
 Now you can activate the virtual python environment by issuing the following command
-source pizza-venv/bin/activate
+`source pizza-venv/bin/activate`
 
 You should see parentheses at the beginning of your prompt. E.g:
 ```
@@ -19,8 +19,8 @@ You should see parentheses at the beginning of your prompt. E.g:
 (pizza-venv) ~/Documents/code/private/pizza (master) $
 ```
 
-Install flask:
-`pip install Flask`
+Install dependencies:
+`pip install -r requirements.txt`
 
 The above install command will not mess with your existing python installation if you are running in venv.
 

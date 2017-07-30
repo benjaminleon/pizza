@@ -89,17 +89,10 @@ define(['lodash'], function(_) {
   };
 
   return {
-
-    /*
-    TODO: 
-    Sort toppings and pizza names alphabetically.
-
-    Search should highlight the selected pizza instead of removing the others
-     */
-
     getPizzas: function() {
       return _.chain(pizzas)
         .toPairs()
+        .sortBy(function(item) { return item[0] })
         .value();
     },
 
@@ -108,6 +101,7 @@ define(['lodash'], function(_) {
         .values()
         .flattenDeep()
         .uniq()
+        .sortBy()
         .value();
     },
 

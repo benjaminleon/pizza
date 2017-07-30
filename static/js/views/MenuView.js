@@ -47,8 +47,6 @@ define([
       });
 
       this.searchFlexDataList.bind('change:flexdatalist', function(e, data) { self.onSearchNameChanged(data.value); });
-
-      this.renderPizzaList(pizzas);
     },
 
     onToppingPreferenceChanged: function(e) {
@@ -67,23 +65,25 @@ define([
 
       this.$el.find('#pizza-search-input-wrapper input[type="text"]').val('');
 
-      var pizzas = this.selectedToppings.length > 0 ? PizzaData.findByToppings(this.selectedToppings) : PizzaData.getPizzas();
+      var pizzas = this.selectedToppings.length > 0 ? PizzaData.findByToppings(this.selectedToppings) : [];
 
-      this.renderPizzaList(pizzas);
+      this.renderSearchResults(pizzas);
     },
 
     onSearchNameChanged: function(name) {
-      var pizzas = (name.trim() !== '') ? PizzaData.findByName(name) : PizzaData.getPizzas();
+      var pizzas = (name.trim() !== '') ? PizzaData.findByName(name) : [];
 
       this.$el.find('#pizza-toppings').find('input[type="checkbox"]').attr('checked', false);
 
-      this.renderPizzaList(pizzas);
+      this.renderSearchResults(pizzas);
     },
 
-    renderPizzaList: function(pizzas) {
+    renderSearchResults: function(pizzas) {
+      this.$el.find('#pizza-search-result-h4').toggle(pizzas.length > 0);
+
       var templateHtml = this.compiledPizzaRowTemplate(pizzas);
 
-      var pizzasEl = this.$el.find('#pizzas');
+      var pizzasEl = this.$el.find('#pizza-search-results');
 
       pizzasEl.html(templateHtml);
     }

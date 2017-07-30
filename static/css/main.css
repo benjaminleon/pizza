@@ -93,13 +93,37 @@ body {
     margin-top: 50px;
 }
 
-#pizzas .pizza {
+.pizza {
     flex: 1;
     height: 80px;
     padding: 5px 20px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
 }
-#pizzas .pizza .pizza-toppings {
+
+.pizza .pizza-toppings {
     color: #a0a0a0;
+}
+
+#pizza-search-result-h4 {
+    display: none;
+    margin: 50px 0 40px 0;
+}
+
+.pizza-search-result-item {
+    background: #45BF55;
+    color: #fff;
+    border: 1px solid #167F39;
+}
+
+.pizza-search-result-item .pizza-toppings {
+    color: #fff;
+}
+
+#all-pizzas-h4 {
+    margin-top: 40px;
+}
+
+.text-center {
+    text-align: center;
 }

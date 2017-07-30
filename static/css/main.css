@@ -1,0 +1,105 @@
+
+html, body {
+    font-family: "Open Sans", "Helvetica", "SansSerif", serif;
+	overflow-x: hidden;
+}
+
+
+html {
+	background: url('/img/background.jpg') no-repeat fixed center;
+}
+
+body {
+	background:transparent;
+}
+
+#app-container {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+#menu-view-container {
+    position: relative;
+    width: 720px;
+    min-height: 80vh;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+#menu-view-container:before, #menu-view-container:after {
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+#menu-view-container:after {
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
+
+#menu-h2 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+    font-size: 4em;
+}
+
+#pizza-toppings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+#pizza-toppings .topping {
+    flex: 1;
+    width: 130px;
+}
+
+#pizza-search-input-wrapper input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    outline: none;
+}
+
+#pizzas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#pizzas .pizza {
+    flex: 1;
+    height: 80px;
+    padding: 5px 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+#pizzas .pizza .pizza-toppings {
+    color: #a0a0a0;
+}

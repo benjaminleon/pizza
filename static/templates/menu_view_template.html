@@ -1,0 +1,35 @@
+<div id="menu-view-container" class="view-container">
+
+    <h2 id="menu-h2">Meny</h2>
+
+    <hr />
+
+    <datalist id="pizzas-datalist">
+        {{#each pizzas}}
+            <option value="{{0}}">{{0}}</option>
+        {{/each}}
+    </datalist>
+
+    <div id="pizza-search-input-wrapper">
+        <input class="flexdatalist"
+               type="text"
+               placeholder="Sök efter en pizza..."
+               list="pizzas-datalist"
+               name="suggest-pizzas">
+    </div>
+
+    <div id="pizza-toppings">
+        {{#each toppings}}
+            <div class="topping">
+                <div class="topping pretty success circle smooth">
+                    <input class="topping-checkbox" data-topping="{{ this }}" type="checkbox">
+                    <label><i class="fa fa-check"></i> {{ this }}</label>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+
+    <div id="pizzas">
+        <!-- Dynamic Content -->
+    </div>
+</div>

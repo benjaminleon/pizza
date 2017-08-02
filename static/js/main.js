@@ -32,7 +32,7 @@ requirejs.config({
 		'backbone': {
 			deps: [ 'underscore', 'jquery' ]
 		},
-		'app': {
+		'App': {
 			deps: [
 				'bootstrap',
 				'backbone',
@@ -45,7 +45,7 @@ requirejs.config({
 	}
 });
 
-require(['app'], function(App) {
+require(['App'], function(App) {
 	var app = new App();
 	app.init();
 

@@ -1,0 +1,14 @@
+
+{{#each this}}
+    <div class="pizza pizza-search-result-item">
+        <h4 class="pizza-name">{{0}}</h4>
+        <div class="pizza-toppings">
+            <span>
+                ost tomatsås
+                {{#each [1]}}
+                    {{this}}
+                {{/each}}
+            </span>
+        </div>
+    </div>
+{{/each}}
